@@ -105,14 +105,14 @@ func (c *KafkaConnectionResolver) composeOptions(connections []*ccon.ConnectionP
 	}
 
 	// Contruct options and copy over credentials
-	options := cconf.NewEmptyConfigParams().SetDefaults(&credential.ConfigParams)
+	options := cconf.NewEmptyConfigParams().SetDefaults(credential.ConfigParams)
 
 	globalUri := ""
 	uriBuilder := strings.Builder{}
 
 	// Process connections, find or constract uri
 	for _, connection := range connections {
-		options = options.SetDefaults(&connection.ConfigParams)
+		options = options.SetDefaults(connection.ConfigParams)
 
 		if globalUri != "" {
 			continue

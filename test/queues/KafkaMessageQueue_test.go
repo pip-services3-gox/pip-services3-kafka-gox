@@ -91,28 +91,28 @@ func (c *kafkaMessageQueueTest) teardown(t *testing.T) {
 }
 
 func TestKafkaMessageQueue(t *testing.T) {
-	// c := newKafkaMessageQueueTest()
-	// if c == nil {
-	// 	return
-	// }
+	c := newKafkaMessageQueueTest()
+	if c == nil {
+		return
+	}
 
-	// c.setup(t)
-	// t.Run("Send Receive Message", c.fixture.TestSendReceiveMessage)
-	// c.teardown(t)
+	c.setup(t)
+	t.Run("Send Receive Message", c.fixture.TestSendReceiveMessage)
+	c.teardown(t)
 
-	// c.setup(t)
-	// t.Run("Receive Send Message", c.fixture.TestReceiveSendMessage)
-	// c.teardown(t)
+	c.setup(t)
+	t.Run("Receive Send Message", c.fixture.TestReceiveSendMessage)
+	c.teardown(t)
 
-	// c.setup(t)
-	// t.Run("Send Peek Message", c.fixture.TestSendPeekMessage)
-	// c.teardown(t)
+	c.setup(t)
+	t.Run("Send Peek Message", c.fixture.TestSendPeekMessage)
+	c.teardown(t)
 
-	// c.setup(t)
-	// t.Run("Peek No Message", c.fixture.TestPeekNoMessage)
-	// c.teardown(t)
+	c.setup(t)
+	t.Run("Peek No Message", c.fixture.TestPeekNoMessage)
+	c.teardown(t)
 
-	// c.setup(t)
-	// t.Run("On Message", c.fixture.TestOnMessage)
-	// c.teardown(t)
+	c.setup(t)
+	t.Run("On Message", c.fixture.TestOnMessage)
+	c.teardown(t)
 }
