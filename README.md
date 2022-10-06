@@ -5,9 +5,9 @@ This module is a part of the [Pip.Services](http://pipservices.org) polyglot mic
 The Kafka module contains a set of components for messaging using the Kafka protocol. Contains the implementation of the components for working with messages: KafkaMessageQueue, KafkaConnectionResolver.
 
 The module contains the following packages:
-- [**Build**](https://godoc.org/github.com/pip-services3-gox/pip-services3-kafka-gox/build) - factory default implementation
-- [**Connect**](https://godoc.org/github.com/pip-services3-gox/pip-services3-kafka-gox/connect) - components for setting up the connection to the Kafka broker
-- [**Queues**](https://godoc.org/github.com/pip-services3-gox/pip-services3-kafka-gox/queues) - components of working with a message queue via the Kafka protocol
+- **Build** - factory default implementation
+- **Connect** - components for setting up the connection to the Kafka broker
+- **Queues** - components of working with a message queue via the Kafka protocol
 
 <a name="links"></a> Quick links:
 
